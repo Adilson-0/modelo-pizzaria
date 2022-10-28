@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa da Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body onload="setInterval('atualizar()', 500)">
+    <header>
+        <div id="header_cent">
+            <img id="menu" src="imagens/588a6507d06f6719692a2d15.png" alt="menu">
+            <div id="head">
+                <img id="pizza_icon" src="imagens/1404945.png" alt="pizza icone">
+                <h1 id="title"><strong>LA CASA <span id="da">DA</span> PIZZA</strong></h1>
+            </div>
+        </div>
+    </header>
+    <div id="opcoes">
+        <h2 id="title_op"><strong>OPÇÕES</strong></h2>
+        <hr>
+        <div id="opcoes_alt">
+            <p id="button1" class="op" data-toggle="modal" data-target="#modalcontato">contatos</p>
+            <br>
+            <p id="button2" class="op" data-toggle="modal" data-target="#modalendereco">endereço</p>
+            <br>
+            <p id="button3" class="op"><a id="op_link" href="#quem_somos">quem somos?</a></p>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalcontato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color: rgb(153, 15, 15);">
+            <h3 class="modal-title" id="exampleModalLabel" style="text-align: center; color: white;"><strong>Contatos</strong></h5>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+            <p><span style="font-weight: bold;">telefone:</span> (83) 0000-0000</p>
+            <br>
+            <p><span style="font-weight: bold;">whatsapp:</span> (83) 0000-0000</p>
+            <br>
+            <p><span style="font-weight: bold;">e-mail:</span> lacasacapizza@gmail.com</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: rgb(204, 32, 32); color: white;">Fechar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modalendereco" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header" style="background-color: rgb(153, 15, 15);">
+                <h3 class="modal-title" id="exampleModalLabel" style="text-align: center; color: white;"><strong>Endereço</strong></h5>
+            </div>
+            <div class="modal-body" style="text-align: center;">
+                <p><strong>Rua Almeida alves - Campina Grande - PB</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: rgb(204, 32, 32); color: white;">Fechar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="intro">
+        <div id="intro_text">
+            <h2 style="margin-top: 0;" id="title_intro">BEM VINDO...</h2>
+            <p id="text_intro">conheça agora a pizzaria <strong><span style="color: rgb(204, 32, 32);">La Casa <span style="color: white; background-color: rgb(153, 15, 15); padding: 2px; font-size: 20px;">da</span> Pizza</span></strong>, onde você poderá se divertir e saborear uma deliciosa refeição<br>sem precisar gastar tanto!</p>
+        </div>
+    </div>
+
+    <div id="quem_somos" data-aos="fade-up" data-aos-duration="500">
+        <h2 style="text-align: center;" id="h2_qum">Quem somos?</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <h2 style="text-align: center;" data-aos="fade-up" data-aos-duration="500">Alguns Produtos</h2>
+    <div style="display: grid; justify-items: center;" data-aos="fade-up" data-aos-duration="1000">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="display: grid; justify-items: center; width: 70%; height: 90%;">
+            <div class="carousel-inner">
+            <div class="item active"">
+                <figure style="display: grid; justify-items: center;"><img class="d-block w-100" src="imagens/cheese-164872_640.jpg" alt="pizza1"></figure>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="text-align: center; font-size: 25px; color: black;">Pizza Portuguesa</h5>
+                </div>
+            </div>
+            <div class="item">
+                <figure style="display: grid; justify-items: center;"><img class="d-block w-100" src="imagens/pizza-2000595_640.jpg" alt="pizza2"></figure>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="text-align: center; font-size: 25px; color: black;">Pizza de frango</h5>
+                </div>
+            </div>
+            <div class="item">
+                <figure style="display: grid; justify-items: center;"><img class="d-block w-100" src="imagens/pizza-1344720_640.jpg" alt="pizza3"></figure>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="text-align: center; font-size: 25px; color: black;">Pizza de calabresa</h3>
+                </div>
+            </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+    <hr style="margin-top: 0; margin-bottom: 35px;">
+    <div id="align_cards" data-aos="fade-up" data-aos-duration="500" style="display: flex; justify-content: center; margin-bottom: 25px;">
+        <div style="display: grid; justify-items: center;">
+            <div class="card">
+                <img id="img_card1" class="card-img-top" src="imagens/cheese-164872_640.jpg" alt="pizza1">
+                <div class="card-body">
+                    <h4 class="card-title">Pizza Portuguesa</h4>
+                    <p class="card-text">R$30,00</p>
+                    <button data-toggle="modal" data-target="#modal_pizza1" id="button_card1" type="button" class="btn">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+        <div style="display: grid; justify-items: center;">
+            <div class="card">
+                <img id="img_card2" class="card-img-top" src="imagens/pizza-2000595_640.jpg" alt="pizza1">
+                <div class="card-body">
+                    <h4 class="card-title">Pizza de Frango</h4>
+                    <p class="card-text">R$30,00</p>
+                    <button data-toggle="modal" data-target="#modal_pizza2" id="button_card2" type="button" class="btn">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+        <div style="display: grid; justify-items: center;">
+            <div class="card">
+                <img id="img_card3" class="card-img-top" src="imagens/pizza-1344720_640.jpg" alt="pizza1">
+                <div class="card-body">
+                    <h4 class="card-title">Pizza de Calabresa</h4>
+                    <p class="card-text">R$30,00</p>
+                    <button data-toggle="modal" data-target="#modal_pizza3" id="button_card3" type="button" class="btn">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 5%;">
+        <p id="frase">FAÇA JÁ O SEU PEDIDO!</p>
+    </div>
+
+    <div class="modal fade" id="modal_pizza1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div id="modal_card1" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: rgb(153, 15, 15);">
+                    <h3 class="modal-title" id="exampleModalLabel" style="text-align: center; color: white;"><strong>Ingredientes</strong></h5>
+                </div>
+                <div class="modal-body" style="display: grid; justify-items: center;">
+                    <ul style="padding-left: 25px;">
+                        <li>massa</li>
+                        <li>molho de tomate</li>
+                        <li>ovo cozido</li>
+                        <li>cebola</li>
+                        <li>presunto</li>
+                        <li>queijo</li>
+                        <li>azeitona</li>
+                    </ul>
+                    <p style="text-align: center;"><strong>Preço: </strong>R$30,00</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: rgb(204, 32, 32); color: white;">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_pizza2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div id="modal_card2" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: rgb(153, 15, 15);">
+                    <h3 class="modal-title" id="exampleModalLabel" style="text-align: center; color: white;"><strong>Contatos</strong></h5>
+                </div>
+                <div class="modal-body" style="display: grid; justify-items: center;">
+                    <ul style="padding-left: 25px;">
+                        <li>massa</li>
+                        <li>molho de tomate</li>
+                        <li>queijo catupiry</li>
+                        <li>frango</li>
+                    </ul>
+                    <p style="text-align: center;"><strong>Preço: </strong>R$30,00</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: rgb(204, 32, 32); color: white;">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_pizza3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div id="modal_card3" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: rgb(153, 15, 15);">
+                    <h3 class="modal-title" id="exampleModalLabel" style="text-align: center; color: white;"><strong>Contatos</strong></h5>
+                </div>
+                <div class="modal-body" style="display: grid; justify-items: center;">
+                    <ul style="padding-left: 25px;">
+                        <li>massa</li>
+                        <li>molho de tomate</li>
+                        <li>queijo mussarela</li>
+                        <li>cebola</li>
+                        <li>azeitona</li>
+                    </ul>
+                    <p style="text-align: center;"><strong>Preço: </strong>R$30,00</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: rgb(204, 32, 32); color: white;">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer><p style="text-align: center;">site desenvolvido por <a target="_blank" href="https://github.com/Adilson-0">Adilson Fernandes</a></p></footer>
+</body>
+    <script src="app.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</html>
+</html>
